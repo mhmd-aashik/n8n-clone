@@ -81,36 +81,6 @@ export const LoginForm = () => {
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)}>
               <div className="grid gap-6">
-                <div className="flex flex-col gap-4">
-                  <Button
-                    variant="outline"
-                    className="w-full"
-                    type="button"
-                    disabled={isPending}
-                  >
-                    <Image
-                      alt="GitHub"
-                      src="/logos/github.svg"
-                      width={20}
-                      height={20}
-                    />
-                    Continue with GitHub
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="w-full"
-                    type="button"
-                    disabled={isPending}
-                  >
-                    <Image
-                      alt="Google"
-                      src="/logos/google.svg"
-                      width={20}
-                      height={20}
-                    />
-                    Continue with Google
-                  </Button>
-                </div>
                 <div className="grid gap-6">
                   <FormField
                     control={form.control}
@@ -149,6 +119,36 @@ export const LoginForm = () => {
                   <Button type="submit" className="w-full" disabled={isPending}>
                     Login
                   </Button>
+                  <div className="flex flex-col gap-4">
+                    <Button
+                      variant="outline"
+                      className="w-full"
+                      type="button"
+                      disabled={isPending}
+                    >
+                      <Image
+                        alt="GitHub"
+                        src="/logos/github.svg"
+                        width={20}
+                        height={20}
+                      />
+                      Continue with GitHub
+                    </Button>
+                    <Button
+                      variant="outline"
+                      className="w-full"
+                      type="button"
+                      disabled={isPending}
+                    >
+                      <Image
+                        alt="Google"
+                        src="/logos/google.svg"
+                        width={20}
+                        height={20}
+                      />
+                      Continue with Google
+                    </Button>
+                  </div>
                 </div>
                 <div className="text-center text-sm">
                   Don&apos;t have an account?{" "}
